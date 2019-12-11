@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696139605292",
+    "firebase_url": "https://blood-spotter.firebaseio.com",
+    "project_id": "blood-spotter",
+    "storage_bucket": "blood-spotter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696139605292:android:e111bf1c2dca95d69ab889",
+        "android_client_info": {
+          "package_name": "com.bloodspotterapp.bloodspotter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696139605292-566ji36n2kbjtqil048mahcn8icgh3qj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bloodspotterapp.bloodspotter",
+            "certificate_hash": "08edc1500e984cf77816c0940aac41ef6014fa66"
+          }
+        },
+        {
+          "client_id": "696139605292-u4ulfbo1pq7enu0t5rjcfol7jietkga9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEStKBzZvcoxD0WTu9mTkv0ToGTAyEPtQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696139605292-u4ulfbo1pq7enu0t5rjcfol7jietkga9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

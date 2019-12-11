@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_pkt_profile_line"
+                android:id="@+id/profileImage"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:text="Hello, User"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:textColor="@color/white"
+                    android:text="_____________@gmail.com"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/btn_logout"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:background="@drawable/rect_outline"
+                    android:text="Logout"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>

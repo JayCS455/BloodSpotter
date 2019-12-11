@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/freebtn"
+    tools:context=".UpdateProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="serif"
+            android:id="@+id/txt_code"
+            android:backgroundTint="#F8ADAD"
+            android:background="@drawable/border_line"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/reg_username"
+                    android:background="@drawable/rectline"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:background="@drawable/rectline"
+                    android:padding="10dp"
+                    android:id="@+id/reg_useremail"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:layout_margin="10dp"
+                    android:fontFamily="serif"
+                    android:background="@drawable/rectline"
+                    android:padding="10dp"
+                    android:id="@+id/reg_userpass"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rectline">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reg_usercountry"
+                        android:entries="@array/country_list"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rectline">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reg_userstate"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rectline">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reg_usercity"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact No"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="serif"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/rectline"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:id="@+id/reg_userconatct"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Bith"
+                    android:background="@drawable/rectline"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/ic_date_range_black_24dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="serif"
+                    android:textColorHint="@color/white"
+                    android:layout_margin="10dp"
+                    android:id="@+id/reg_userdob"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rectline">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Blood Group"
+                        android:padding="5dp"
+                        android:entries="@array/blood_group_list"
+                        android:id="@+id/reg_userbloodgroup"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textAlignment="center"
+                    android:id="@+id/btn_SignUp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/rect_outline"/>
+
+                <TextView
+                    android:id="@+id/txt_linklogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="serif"
+                    android:layout_gravity="bottom"
+                    android:text="Already a member? Login"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

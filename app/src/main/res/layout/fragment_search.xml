@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <!--<EditText
+            android:id="@+id/search_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/search_layout"
+            android:ems="12"
+            android:fontFamily="@font/nunito_semibold"
+            android:hint="Search here"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#8F8E8E"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_pkt_search_line"
+            android:drawableTint="@color/colorPrimary"
+            android:textSize="16sp" />-->
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_field"
+            android:background="@drawable/rectline"
+            android:layout_margin="10dp"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            android:backgroundTint="#F79C9C"/>
+
+       <!-- <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/search_field"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/search_field"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_border"
+            android:src="@drawable/ic_pkt_search_line" />-->
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_below="@id/search_field"
+            android:layout_marginTop="10dp"
+            android:id="@+id/result_list"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

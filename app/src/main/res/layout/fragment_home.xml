@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_donner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rect_outline"
+                    android:text="Donor's"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_blood_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Bank"
+                    android:background="@drawable/rect_outline"
+                    android:layout_weight="2"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

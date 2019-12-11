@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/freebtn"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/rectline"
+        android:backgroundTint="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="2"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:id="@+id/txt_user_name"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_weight="2"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/txt_user_email"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectline"
+        android:backgroundTint="#ffffff"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact No"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact No"
+                    android:id="@+id/txt_user_contact"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Country"
+                    android:id="@+id/txt_user_country"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:id="@+id/txt_user_state"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:id="@+id/txt_user_city"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Birth"
+                    android:id="@+id/txt_user_dob"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"
+                    android:id="@+id/txt_user_blood_group"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/btn_update_link"
+            android:background="@drawable/rect_outline"/>
+
+    </LinearLayout>
+

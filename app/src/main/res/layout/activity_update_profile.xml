@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/freebtn"
+    tools:context=".UpdateProfileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit your Profile"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectline"
+        android:backgroundTint="#ffffff"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:id="@+id/txt_donor_name"
+                    android:background="@drawable/border_line"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:background="@drawable/border_line"
+                    android:padding="10dp"
+                    android:id="@+id/txt_donor_email"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/border_line">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edt_donor_country"
+                        android:entries="@array/country_list"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/border_line">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edt_donor_state"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/border_line">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edt_donor_city"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Detail"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact No"
+                    android:background="@drawable/border_line"
+                    android:padding="10dp"
+                    android:id="@+id/edt_donor_conatct"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Bith"
+                    android:background="@drawable/border_line"
+                    android:padding="10dp"
+                    android:id="@+id/edt_donor_dob"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/border_line">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"
+                    android:padding="5dp"
+                    android:entries="@array/blood_group_list"
+                    android:id="@+id/edt_donor_bloodgroup"
+                    android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Profile"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:id="@+id/btn_update"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rect_outline"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
